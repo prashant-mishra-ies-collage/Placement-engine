@@ -42,6 +42,16 @@ function Contact() {
                  placeholder="Enter your Name"
                  required
                />
+
+
+               <input  
+                 type="text"
+                 onChange={(e) => setname(e.target.value)}
+                 value={name}
+                 className="w-full border p-2 rounded-md outline-none bg-[#1C2029] border-none"
+                 placeholder="Enter your Name"
+                 required
+               />
              
              <textarea
                 onChange={(e) => setmessage(e.target.value)}
