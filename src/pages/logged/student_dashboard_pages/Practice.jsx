@@ -173,7 +173,20 @@ const Practice = () => {
           Choose a category to start practicing
         </div>
       </div>
-
+ <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+          <div className="mb-6">
+            <div className="flex items-center justify-between mb-4">
+              <span className={`px-3 py-1 text-sm font-semibold rounded-full ${categories[selectedCategory].color}`}>
+                {categories[selectedCategory].name}
+              </span>
+              <span className="text-sm text-gray-500">
+                {currentQuestion.difficulty} • {currentQuestion.category}
+              </span>
+            </div>
+            <h2 className="text-xl font-medium text-gray-800 mb-4">
+              {currentQuestion.question}
+            </h2>
+          </div>
       {/* Category Selection */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {Object.entries(categories).map(([key, category]) => (
